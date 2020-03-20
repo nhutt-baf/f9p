@@ -234,7 +234,7 @@ namespace UBXTestings
 
             public byte carSoln
             {
-                get { return (byte)((BitField >> 6) & 1); }
+                get { return (byte)((BitField >> 6) & 3); }
                 set
                 {
                     BitField = (ushort)(BitField & ~(1 << 6) | (value << 6));
@@ -424,7 +424,7 @@ namespace UBXTestings
 
             public byte carrSoln
             {
-                get { return (byte)((BitField >> 4) & 1); }
+                get { return (byte)((BitField >> 4) & 3); }
 
             }
 
